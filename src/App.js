@@ -1,13 +1,18 @@
 
-import Navbar from './components/Navbar';
-import Sidebar1 from './components/Sidebar1';
-import Sidebar2 from './components/Sidebar2';
-import Main from './components/Main';
-import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
+// import Sidebar1 from './components/Sidebar1';
+// import Sidebar2 from './components/Sidebar2';
+// import Main from './components/Main';
+// import Footer from './components/Footer';
+// import CBCPropEx from './props/CBCPropEx';
+// import FBCPropsEx from './props/FBCPropsEx';
+import PropChildEx from "./props/PropChildEx"
+import Subchild from "./props/Subchild"
 
-function App() {
-  let username="Ratna";
-  return (
+
+// function App() {
+//   let username="Ratna";
+//   return (
     // <div className="App">
     //   <header className="App-header">
     //     <h1 style={{ color: 'red' }}>Hello World</h1>
@@ -18,18 +23,46 @@ function App() {
     //   <p>{100+100}</p>  
     // </div>
     
-      <div className='app'>
-        <Navbar />
-        <Main/>
-        <div className='sidebar'>
-        <Sidebar1/>
-        <Sidebar2 />
-        </div>
-        <Footer/>
-      </div>
-  
+      // <div className='app'>
+      //   <Navbar />
+      //   <Main/>
+      //   <div className='sidebar'>
+      //   <Sidebar1/>
+      //   <Sidebar2 />
+      //   </div>
+      //   <Footer/>
+      // </div>
 
-  );
+      // <div>
+        {/* <CBCPropEx username="Ratna" 
+        age={20} 
+        hobbies={["Playing","reading books"]}
+        address={{city:"Hyderabad",state:"Telangana"}}
+        sendFun={function() {alert("Hello")}}/> */}
+        // <FBCPropsEx
+//         username="Abhinay"
+//         isMarried={true}
+//         hobbies={["Chatting","Reading","Eating","Sleeping"]}
+//         />
+//       </div>
+//   );
+// }
+
+
+// export default App;
+
+
+// import React from 'react';
+
+
+const App = () => {
+  return (
+    <div>
+      <PropChildEx num={100}/>
+      <h1>This is dat coming from props children</h1>
+      <Subchild/>
+    </div>
+  )
 }
 
-export default App;
+export default App
