@@ -6,6 +6,7 @@
 // import Footer from './components/Footer';
 // import CBCPropEx from './props/CBCPropEx';
 // import FBCPropsEx from './props/FBCPropsEx';
+import Child1 from "./props/Child1"
 import PropChildEx from "./props/PropChildEx"
 import Subchild from "./props/Subchild"
 
@@ -60,7 +61,8 @@ const App = () => {
     <div>
       <PropChildEx num={100}/>
       <h1>This is dat coming from props children</h1>
-      <Subchild/>
+      <Subchild/> <br/>
+      <Child1/>
     </div>
   )
 }
