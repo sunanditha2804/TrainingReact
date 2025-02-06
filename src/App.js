@@ -9,6 +9,8 @@
 import Child1 from "./props/Child1"
 import PropChildEx from "./props/PropChildEx"
 import Subchild from "./props/Subchild"
+import CBCStateEx from "./stateexample/CBCStateEx"
+import FBCStateEx from "./stateexample/FBCStateEx"
 
 
 // function App() {
@@ -56,13 +58,28 @@ import Subchild from "./props/Subchild"
 // import React from 'react';
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <PropChildEx num={100}/>
+//       <h1>This is dat coming from props children</h1>
+//       <Subchild/> <br/>
+//       <Child1/>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+
 const App = () => {
   return (
     <div>
-      <PropChildEx num={100}/>
-      <h1>This is dat coming from props children</h1>
-      <Subchild/> <br/>
-      <Child1/>
+      {/* <CBCStateEx/> */}
+      <FBCStateEx/>
     </div>
   )
 }
