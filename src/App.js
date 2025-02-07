@@ -6,6 +6,7 @@
 // import Footer from './components/Footer';
 // import CBCPropEx from './props/CBCPropEx';
 // import FBCPropsEx from './props/FBCPropsEx';
+import FunctionalComponent from "./components/FunctionalComponents"
 import Child1 from "./props/Child1"
 import PropChildEx from "./props/PropChildEx"
 import Subchild from "./props/Subchild"
@@ -79,7 +80,8 @@ const App = () => {
   return (
     <div>
       {/* <CBCStateEx/> */}
-      <FBCStateEx/>
+      {/* <FBCStateEx/> */}
+      <FunctionalComponent/>
     </div>
   )
 }
