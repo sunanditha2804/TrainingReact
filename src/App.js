@@ -6,7 +6,10 @@
 // import Footer from './components/Footer';
 // import CBCPropEx from './props/CBCPropEx';
 // import FBCPropsEx from './props/FBCPropsEx';
+import CBCAssignment from "./components/CBCAssignment"
+import ClassComponents from "./components/ClassComponents"
 import FunctionalComponent from "./components/FunctionalComponents"
+import MyForm from "./components/MyForm"
 import Child1 from "./props/Child1"
 import PropChildEx from "./props/PropChildEx"
 import Subchild from "./props/Subchild"
@@ -81,7 +84,10 @@ const App = () => {
     <div>
       {/* <CBCStateEx/> */}
       {/* <FBCStateEx/> */}
-      <FunctionalComponent/>
+      {/* <FunctionalComponent/> */}
+      {/* <CBCAssignment/> */}
+      {/* <ClassComponents/> */}
+      <MyForm/>
     </div>
   )
 }
