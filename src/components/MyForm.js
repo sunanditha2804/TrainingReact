@@ -6,7 +6,8 @@ export class MyForm extends Component {
         super(props)
         this.state={
             textValue:'',
-            skillValue:''
+            skillValue:'Skill not declared',
+            expValue:'Experience not declared'
         }
     }
 
@@ -22,19 +23,40 @@ export class MyForm extends Component {
         })
     }
 
+    changeExp=(event)=>{
+        this.setState({
+            expValue:event.target.value
+        })
+    }
+
+    submitted=(event)=>{
+        alert("Form is submitted successfully "+`${this.state.textValue} ${this.state.skillValue} ${this.state.expValue}`);
+        event.preventDefault();
+    }
   render() {
     return (
       <div className='container'>
-        <form>
+        <form onSubmit={this.submitted}>
             <label>Student Name:</label>
             <input type="text" value={this.state.textValue} onChange={this.changeMsg}/>
             <br/>
-            <label>Skill</label>
+            <label>Skill:</label>
             <select value={this.state.skillValue} onChange={this.changeSkill}>
                 <option>React</option>
                 <option>SpringBoot</option>
                 <option>Node JS</option>
             </select>
+            <br/>
+            <label>Experience:</label>
+            <select value={this.state.expValue} onChange={this.changeExp}>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <br/>
+            <button type='submit'>Submit</button>
         </form>
       </div>
     )

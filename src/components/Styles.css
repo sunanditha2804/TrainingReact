@@ -7,3 +7,27 @@
     text-align: center;
     padding: 10px;
 }
+
+form{
+    padding: 10px;
+    text-align:left;
+    background-color:rgb(148, 126, 126);
+    color: white;
+}
+
+input{
+    background-color:rgb(224, 57, 57);
+    color:white;
+    margin-left: 10px;
+}
+
+option{
+    background-color:rgb(224, 57, 57);
+    color:white;
+}
+
+select{
+    background-color:rgb(224, 57, 57);
+    color:white;
+    margin-left: 10px;
+}
