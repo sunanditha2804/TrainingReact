@@ -10,6 +10,7 @@ import CBCAssignment from "./components/CBCAssignment"
 import ClassComponents from "./components/ClassComponents"
 import FunctionalComponent from "./components/FunctionalComponents"
 import MyForm from "./components/MyForm"
+import RefExamples from "./hookex/RefExamples"
 import UseEffectEx from "./hookex/UseEffectEx"
 import Child1 from "./props/Child1"
 import PropChildEx from "./props/PropChildEx"
@@ -89,7 +90,8 @@ const App = () => {
       {/* <CBCAssignment/> */}
       {/* <ClassComponents/> */}
       {/* <MyForm/> */}
-      <UseEffectEx/>
+      {/* <UseEffectEx/> */}
+      <RefExamples/>
     </div>
   )
 }
